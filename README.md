@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# IRIS - Intelligent Responsive Individualized Study Ecosystem
 
-## Getting Started
+IRIS is an advanced AI-powered learning workspace featuring specialized AI mentors (Mathematics, Science, Coding Coach, Literature, Career Strategist, and Research Assistant), interactive learning widgets, and a dual-engine AI backend.
 
-First, run the development server:
+---
+
+## 🚀 Quick Start
+
+Run the local development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📚 Technical Documentation & System Diagrams
 
-## Learn More
+Full technical specifications, database schemas, field definitions, ER diagrams, and Mermaid system flow diagrams are documented in **[TECHNOLOGY_STACK.md](./TECHNOLOGY_STACK.md)**:
 
-To learn more about Next.js, take a look at the following resources:
+- **[Database Schemas & Field Specs](./TECHNOLOGY_STACK.md#3-database-schema--fields-specification)**: Tables (`iris_users`, `iris_session`, `iris_conversations`, `iris_tasks`, `iris_dna`, `KNOWLEDGE_BASE`) with data types, keys, and constraints.
+- **[Entity Relationship (ER) Diagram](./TECHNOLOGY_STACK.md#4-entity-relationship-er-diagram)**: Visualized database schema relationships.
+- **[System Execution Sequence Diagram](./TECHNOLOGY_STACK.md#5-system-execution--data-flow-diagram)**: Step-by-step Mermaid sequence diagram of student prompts, AI API routing, built-in knowledge engines, and local persistence.
+- **[Architecture Flow Diagram](./TECHNOLOGY_STACK.md#6-comprehensive-system-architecture-flow-diagram)**: Layered client-server architecture flow.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🧬 Core Features
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Multi-Agent AI Mentors**: 6 specialized subject tutors.
+- **Dual-Engine Processing**: Supports live OpenAI/Gemini API calls and a self-contained offline dataset (`src/lib/knowledgeBase.ts`).
+- **Interactive Widgets**: Mathematics Chalkboard, Code Sandbox Editor, Science Simulation Lab, Rhetoric Reviewer, Career Path Roadmap, and Citation Generator.
+- **LaTeX & Markdown Formatting**: Clean mathematical renderer converting raw LaTeX into formatted notation.
